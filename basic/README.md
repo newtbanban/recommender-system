@@ -1,5 +1,7 @@
 # SAR recommend system practice
 
+## current progress: the second to last
+
 ## set up 
 - **environment**: python 3.9 (package recommenders does not support python 3.14)
 - **Core fix**: Install dependencies manually before the main package to avoid errors:
