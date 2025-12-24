@@ -48,3 +48,11 @@ python3.9 -m pip install --user numpy Cython setuptools
 * **mae**: Mean Absolute Error. Measures the average absolute difference between predicted and actual ratings.
 
 * **logloss**: Logarithmic Loss. Measures the performance of a classification model where the prediction input is a probability value between 0 and 1.
+
+## conclusion
+* **result**: its not as good as i expected
+* **things to improve**: 
+    * **Time-based Splitting**: Currently using Stratified Split. Switching to Time-based Split would better simulate real-world scenarios (predicting future behavior based on past).
+    * **Data Filtering (Sparsity)**: Filter out users or items with too few interactions (e.g., < 5 ratings) in the training set to reduce noise and improve model stability.
+    * **Hyperparameter Tuning**: Experiment with different similarity metrics (e.g., Lift, Cosine vs. Jaccard) and time decay coefficients to optimize performance.
+    * **Threshold Adjustment**: Adjust the `positivity_threshold` (currently 4) during evaluation to see if a different definition of "like" yields better business value.
