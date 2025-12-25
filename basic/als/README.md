@@ -1,11 +1,10 @@
 # ALS
 
-## current progress: 
+## current progress: 0.
 
 ## set up 
-* must donwnload pyspark first
-
-    ```%pip install pyspark```
+* must donwnload pyspark first(careful with the version, might have conflict with java)
+    ```%pip install pyspark==3.5.0```
 # SAR recommend system practice
 
 ## set up 
